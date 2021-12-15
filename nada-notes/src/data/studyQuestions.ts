@@ -4,10 +4,6 @@ export interface StudyQuestionData {
   answer: string;
 }
 
-export interface FlashcardData extends StudyQuestionData {
-  key: number
-}
-
 export interface StudyQuestions {
     [key: string]: Array<StudyQuestionData>
 }

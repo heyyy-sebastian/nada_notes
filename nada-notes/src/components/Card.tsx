@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface CardProps {
   key: number;
-  id: number;
   question: string;
   answer: string;
 }
 
-const Card: React.FC<CardProps> = ({ id, question, answer }) => {
+const Card: React.FC<CardProps> = ({ question, answer }) => {
+  const [flip, setFlip] = useState(false)
+
   return (
-    <>
-     <p>{question}</p>  
-     <p>{answer}</p> 
-    </>
+    <div
+      className={`card ${flip ? 'flip' : ''}`}
+      onClick={() => setFlip(!flip)}
+    >
+      <div className="front">
+        {question}
+      </div>
+      <div className="back">{answer}</div>
+    </div>
   );
 }
 

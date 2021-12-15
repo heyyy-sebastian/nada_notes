@@ -25,7 +25,9 @@ function App() {
           return(
             <div key={`${subject}-list-${i}`}>
               <h2>{subject}</h2>
-              <CardList cards={questionsInProgress[i][subject]}/>
+              <div className="card-container">
+                <CardList cards={questionsInProgress[i][subject]}/>
+              </div>
             </div>
           );
         })
