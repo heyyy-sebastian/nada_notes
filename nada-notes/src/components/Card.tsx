@@ -1,7 +1,19 @@
 import React from 'react';
 
-export default function Card() {
+interface CardProps {
+  key: number;
+  id: number;
+  question: string;
+  answer: string;
+}
+
+const Card: React.FC<CardProps> = ({ id, question, answer }) => {
   return (
-   <p>This is a card</p>
+    <>
+     <p>{question}</p>  
+     <p>{answer}</p> 
+    </>
   );
 }
+
+export default Card;

@@ -1,7 +1,20 @@
 import React from 'react';
+import Card from './Card';
+import { StudyQuestionData } from '../data/studyQuestions'
 
-export default function CardList() {
-  return (
-   <p>Cards go here</p>
-  );
+
+type CardListProps = {
+    cards: Array<StudyQuestionData>;
 }
+
+const CardList: React.FC<CardListProps> = ({ cards }) => { 
+    return (
+        <>
+            { cards.map( card => {
+                return(<Card {...card} key={card.id}/>);
+            })}  
+        </>
+    );
+}
+
+export default CardList;
