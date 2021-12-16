@@ -7,19 +7,16 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ question, answer }) => {
-  const [flip, setFlip] = useState(false)
+  const [flip, setFlip] = useState(false);
 
   return (
-    <div
-      className={`card ${flip ? 'flip' : ''}`}
-      onClick={() => setFlip(!flip)}
-    >
+    <div className={`card ${flip ? 'flip' : ''}`} onClick={() => setFlip(!flip)}>
       <div className="front">
-        {question}
+          {question}
       </div>
       <div className="back">{answer}</div>
     </div>
-  );
+  )
 }
 
 export default Card;

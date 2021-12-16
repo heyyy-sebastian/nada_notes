@@ -19,15 +19,13 @@ function App() {
       <header>
         <h1>NADA Flashcards</h1>
       </header>
-      <div>
+      <div className="cardlist-container">
       <>
       { subjects.map( (subject, i) => {
           return(
             <div key={`${subject}-list-${i}`}>
               <h2>{subject}</h2>
-              <div className="card-container">
                 <CardList cards={questionsInProgress[i][subject]}/>
-              </div>
             </div>
           );
         })
