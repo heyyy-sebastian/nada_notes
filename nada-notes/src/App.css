@@ -11,6 +11,7 @@
 
 .cardlist-container {
   width: 80%;
+  margin-bottom: 2rem;
 }
 
 .card-container {
@@ -23,7 +24,7 @@
 }
 
 .card {
-  background-color: #F9F2E5;
+  /* background-color: #F9F2E5; */
   display: inline-flex;
   justify-content: center;
   position: relative;
@@ -34,7 +35,7 @@
   cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
   height: 15rem;
-  width: 25rem;
+  width: 18rem;
 }
 
 .card:hover {
@@ -48,6 +49,7 @@
 
 .card .front {
   left: 0;
+  font-weight: 600;
 }
 
 .card .front,
