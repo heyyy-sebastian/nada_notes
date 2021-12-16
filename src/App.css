@@ -62,3 +62,7 @@
 .card .back {
   transform: rotateY(180deg);
 }
+
+.disclaimer {
+  font-size: .8rem;
+}

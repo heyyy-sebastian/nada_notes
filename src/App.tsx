@@ -32,6 +32,11 @@ function App() {
       } 
       </> 
       </div>
+      <footer>
+        <p className="disclaimer">This website was built independently of the N.A.D.A. and is meant exclusively for independent study; 
+          it does not constitute supervision or official instruction.
+        </p>
+      </footer>
     </div>
   );
 }
