@@ -24,6 +24,7 @@ function App() {
           return(
             <div key={`${subject}-list-${i}`}>
               <h2>{subject}</h2>
+              <p className="disclaimer">Refresh the page to reset your cards.</p>
               <CardList cards={questionsInProgress[i][subject]}/>
             </div>
           );

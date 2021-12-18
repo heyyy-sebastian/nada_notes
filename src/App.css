@@ -38,11 +38,15 @@
   width: 18rem;
 }
 
-.card.completed {
+.card.complete {
   transition: opacity 1.5s ease-out, height 1.5s ease-out;
   opacity: 0;
   height: 0;
   overflow: hidden;
+}
+
+.no-display {
+  display: none;
 }
 
 .card:hover {
